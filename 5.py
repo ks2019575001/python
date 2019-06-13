@@ -1,12 +1,15 @@
-items = {"라면":650, "우유":1100, "콜라":1200, "캔커피":500, "과자":700}
-s = 0
-while True:
-    it = input("제품명 : ")
-    if it in items:
-        s = s+items[it]
-        print("[%s:%d] > %d"%(it,items[it],s))
-    elif it == '':
-        print("총 금액 :", s)
-        break
-    else:
-        print(it, "는(은) 미등록 제품입니다.")
+num1 = int(input("정수1 :"))
+num2 = int(input("정수2 :"))
+
+
+def div_qr(num1,num2):
+    a = num1//num2
+    return a
+
+def div_qr2(num1,num2):
+    b = num1%num2
+    return b
+
+r = div_qr(num1,num2)
+s = div_qr2(num1,num2)
+print("몫 :", r, "나머지 :", s)

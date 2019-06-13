@@ -1,5 +1,8 @@
-for i in range(1,6):
-    print(i, end="")
-import time
-t = time.time()
-time.sleep(10)
+data = [[21, 7, 43, 65], [2, 8, 72, 52]]
+for i in range(len(data)):
+    for j in range(len(data[0])):
+        print(data[i][j], end=" ")
+    print("")
+
+
+

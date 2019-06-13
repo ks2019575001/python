@@ -1,9 +1,3 @@
-engkor_dict = dict()
-while True:
-    eng = input("영어 단어 :")
-    kor = input("한글 단어 :")
-    if eng == '' and kor =='':
-        break
-    else:
-        engkor_dict[eng] = kor
-print(engkor_dict)
+data = [21, 7, 43, 65, 2, 8, 72, 52, 9]
+for i in range(len(data)):
+    print(data[i], end=" ")
