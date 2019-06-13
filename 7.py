@@ -1,9 +1,12 @@
-data = [21, 7, 43, 65, 2, 8, 72, 52, 9]
+jn = input("주민등록번호 년월일 :")
 
-for i in range(9):
-    a = int(input("찾을 값 :"))
-    if a in data:
-        print("위치 :", data.index(a))
-    else:
-        break
-print("찾지 못함")
+import time
+
+now = time.localtime()
+year = now.tm_year
+age = year - (int(jn[0:2]) + 2000)+1
+
+if age <= 0:
+    age = year - (int(jn[0:2]) + 1900)+1
+
+print("나이 :", age)

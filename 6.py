@@ -1,3 +1,4 @@
-data = [21, 7, 43, 65, 2, 8, 72, 52, 9]
-for i in range(len(data)):
-    print(data[i], end=" ")
+jn = "980910-1234567"
+print(jn[0:2], jn[2:4], jn[4:6])
+print(jn[7:8])
+print(jn[-1], jn[-3], jn[-5])

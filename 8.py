@@ -1,8 +1,10 @@
-data = [[21, 7, 43, 65], [2, 8, 72, 52]]
-for i in range(len(data)):
-    for j in range(len(data[0])):
-        print(data[i][j], end=" ")
-    print("")
+word = input("문자열 :")
 
-
-
+while True:
+    a = input("문자 :")
+    if a == '':
+        break
+    elif a in word:
+        print("문자", a, "가 문자열", word, "에 존재함")
+    else:
+        print("문자", a, "가 문자열", word, "에 존재하지 않음")
